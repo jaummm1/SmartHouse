@@ -54,7 +54,7 @@ const Login = () => {
               className={styles.input}
             />
             {error && <div className={styles.error_msg}>{error}</div>}
-            <Link to="https://snapshots.raintank.io/dashboard/snapshot/ECXU3wVUV4egOlfrAZxeYKpWF9M83i6r">
+            <Link to="https://snapshots.raintank.io/dashboard/snapshot/UmrU7cHyVSDFv4gwuM3ayfVH5NveklHT">
               <button type="button" className={styles.green_btn}>
                 Entrar
               </button>
