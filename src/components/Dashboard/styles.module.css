@@ -20,10 +20,12 @@
 .left {
 
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	background-image: url(casa.jpg);
+	background-image: url(cici.jpg);
+	height: 700px;
+	width: 100%;
+	justify-content: center;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 
@@ -84,12 +86,12 @@
 .green_btn {
 	border: none;
 	outline: none;
-	padding: 12px 0;
-	background-color: white;
-	border-radius: 20px;
-	width: 180px;
+	padding: 5px ;
+	background-color: #61abff;
+	border-radius: 15px;
+	width: 100px;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 10px;
 	cursor: pointer;
 }
 

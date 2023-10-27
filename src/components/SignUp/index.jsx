@@ -11,6 +11,9 @@ const Signup = () => {
     password: "",
   });
   const [error, setError] = useState("");
+  const [nao, setNao] = useState(false);
+  const [nao2, setNao2] = useState(false);
+  const [nao3, setNao3] = useState(false);
   const navigate = useNavigate();
 
   const handleChange = ({ currentTarget: input }) => {
@@ -38,50 +41,38 @@ const Signup = () => {
   return (
     <div className={styles.signup_container}>
       <div className={styles.signup_form_container}>
-        <div className={styles.left}>
-          <h1>Bem Vindo de Volta</h1>
+        <div >
+    
           <Link to="/login">
             <button type="button" className={styles.white_btn}>
-              Entrar
+             
             </button>
           </Link>
         </div>
-        <div className={styles.right}>
+        <div >
           <form className={styles.form_container} onSubmit={handleSubmit}>
-            <h1>Criar Nova Conta</h1>
-            <input
-              type="text"
-              placeholder="Nome"
-              name="nome"
-              onChange={handleChange}
-              value={data.nome}
-              required
-              className={styles.input}
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              onChange={handleChange}
-              value={data.email}
-              required
-              className={styles.input}
-            />
-            <input
-              type="password"
-              placeholder="Senha"
-              name="password"
-              onChange={handleChange}
-              value={data.password}
-              required
-              className={styles.input}
-            />
-            {error && <div className={styles.error_msg}>{error}</div>}
-            <Link to="/">
+          {!nao2 && nao ? (<button type="submit" onClick={()=>{setNao2(true)
+          setNao3(false)}} className={styles.green_btn}>
+                NAO
+              </button> ):null}
+           <h5>Quero te pedir uma chance para fazer a gente dar certo e ficar daqui até a eternidade juntos.</h5><h5> Topa?</h5>
+           
+           {!nao3 && nao && nao2? (<button type="submit" onClick={()=>{setNao2(true)
+             setNao3(true) 
+             setNao(false)}} className={styles.green_btn}>
+                NAO
+              </button> ):null}
+              <Link to="/Menu">
               <button type="submit" className={styles.green_btn}>
-                Criar
+                SIM
               </button>
-            </Link>
+              </Link>
+            {!nao  ? (<button type="submit" onClick={()=>{setNao(true)
+               setNao2(false)
+               }} className={styles.green_btn}>
+                NAO
+              </button> ):null}
+        
           </form>
         </div>
       </div>

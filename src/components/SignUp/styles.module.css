@@ -111,8 +111,8 @@ h1 {
 .green_btn {
 	border: none;
 	outline: none;
-	padding: 12px 0;
-	background-color: white;
+	padding: 5px 0;
+	background-color: #edf5f3;
 	border-radius: 20px;
 	width: 180px;
 	font-weight: bold;
@@ -125,7 +125,7 @@ h1 {
 }
 
 .green_btn {
-	background-color: #035243;
+	background-color: #61abff;
 	color: white;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	margin: 10px;
@@ -162,6 +162,7 @@ h1 {
 		width: 100%;
 	}
 	.green_btn, .white_btn {
+		background-color: #61abff;
 		margin: 10px 0;
 		width: 150px;
 		height: 45px;

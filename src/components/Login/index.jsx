@@ -34,46 +34,26 @@ const Login = () => {
       <div className={styles.login_form_container}>
         <div className={styles.left}>
           <form className={styles.form_container} onSubmit={handleSubmit}>
-            <h1>SmartHouse</h1>
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              onChange={handleChange}
-              value={data.email}
-              required
-              className={styles.input}
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              name="password"
-              onChange={handleChange}
-              value={data.password}
-              required
-              className={styles.input}
-            />
-            {error && <div className={styles.error_msg}>{error}</div>}
-            <Link to="https://snapshots.raintank.io/dashboard/snapshot/UmrU7cHyVSDFv4gwuM3ayfVH5NveklHT">
-              <button type="button" className={styles.green_btn}>
-                Entrar
-              </button>
-            </Link>
-            <Link to="/Menu">
-              <button type="button" className={styles.green_btn}>
-                Quem Somos?
-              </button>
-            </Link>
-          </form>
-        </div>
-        <div className={styles.right}>
-          <h1>Novo por aqui ?</h1>
-          <Link to="/signup">
-            <button type="button" className={styles.white_btn}>
-              Cadastrar
+            <h1>cici </h1>
+          
+           <p>Não estamos mais juntos, mas eu ainda te amo, como sempre amei. Desde quando ficamos a primeira vez em 2018,</p>
+Cada vez que eu falo com você, que penso em você, que te vejo, meu coração bate mais forte como se fosse a primeira vez. <p>Eu sinto falta dos momentos em que estive com você, que hoje são apenas lembranças.</p> 
+<p>Eu não sabia que conseguia amar alguém como te amo! A saudade é oque mais dói nesse amor infelizmente. Muitos dizem que amar é deixar ir.</p> <p>Eu não quero e não vou deixar algo de tão especial e tão puro para trás isso pode parecer muito egoísta da minha parte. Por querer tentar</p>
+Mas sí eu não puder fazer você a pessoa mais feliz, eu chego o mais perto disso possível.
+Te amo mil milhões, Cici. &#10084;
+
+
+<p>Ass. Jv</p>
+
+<Link to="/signup">
+            <button type="button" className={styles.white_btn} style={{marginTop: "50px"}}>
+              Continuar?
             </button>
           </Link>
+           
+          </form>
         </div>
+       
       </div>
     </div>
   );
